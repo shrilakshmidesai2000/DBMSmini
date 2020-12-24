@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Register Form</title>
+</head>
+<body>
+ <form action="insert.php" method="POST">
+  <table>
+   <tr>
+    <td>Name :</td>
+    <td><input type="text" name="username" required></td>
+   </tr>
+   <tr>
+    <td>Password :</td>
+    <td><input type="password" name="password" required></td>
+   </tr>
+   <tr>
+    <td>Email :</td>
+    <td><input type="email" name="email" required></td>
+   </tr>
+   <tr>
+    <td>Phone no :</td>
+    <td>
+     <!-- <select name="phoneCode" required>
+      <option selected hidden value="">Select Code</option>
+      <option value="977">977</option>
+      <option value="978">978</option>
+      <option value="979">979</option>
+      <option value="973">973</option>
+      <option value="972">972</option>
+      <option value="974">974</option>
+     </select> -->
+     <input type="phone" name="phone" required>
+    </td>
+   </tr>
+   <tr>
+     <td>Type of waste:</td>
+     <td>
+     <select name="Wastetype" required>
+      <option selected hidden value="">Select type</option>
+      <option value="Dry">Dry Waste</option>
+      <option value="Wet">Wet waste</option>
+      <option value="pla">plastic</option>
+      <option value="was">E-waste</option>
+     </select>
+     </td>
+     <tr>
+      <td>Quantity</td>
+      <td><input type="number" name="Quantity" required></td>
+     </tr>
+     <tr>
+      <td>Date :</td>
+      <td><input type="date" name="date" required></td>
+     </tr>
+     <tr>
+      <td>Time :</td>
+      <td><input type="time" name="time" required></td>
+     </tr>
+
+   <tr>
+    <td><input type="submit" value="Submit"></td>
+   </tr>
+  </table>
+ </form>
+</body>
+</html>
